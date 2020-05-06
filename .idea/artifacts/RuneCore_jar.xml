@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="RuneCore:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/RuneCore_jar</output-path>
+    <root id="archive" name="RuneCore.jar">
+      <element id="module-output" name="RuneCore.main" />
+    </root>
+  </artifact>
+</component>
