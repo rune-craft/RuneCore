@@ -1,5 +1,8 @@
 package org.runecraft.runecore;
 
+import ca.stellardrift.permissionsex.PermissionsEx;
+import ca.stellardrift.permissionsex.sponge.PermissionsExPlugin;
+import net.luckperms.api.LuckPerms;
 import org.spongepowered.api.Sponge;
 import org.spongepowered.api.entity.living.player.Player;
 import org.spongepowered.api.service.user.UserStorageService;
@@ -44,6 +47,8 @@ public class User {
         return Sponge.getServer().getPlayer(uid);
     }
 
-
+    public boolean hasPermission(String perm){
+        LuckPerms.
+    }
 
 }

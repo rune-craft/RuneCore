@@ -78,7 +78,7 @@ public class Atribute {
 
     public static enum CharactersAtributes {
 
-        USER("user", "varchar(32)"),
+        USER("ownerUid", "varchar(32)"),
         UUID("uid", "varchar(32)"),
         CLASS("class", "int"),
         PRIMARY_ELEMENT("primalelement", "int"),
