@@ -12,7 +12,9 @@ import java.util.function.BiFunction;
 
 public enum Table {
 
-    USERS("users", Atribute.UsersAtributes.class);
+    USERS("users", Atribute.UsersAtributes.class),
+    GUILDS("guilds", Atribute.GuildsAtributes.class),
+    GUILD_MEMBERS("guildmembers", Atribute.GuildMembersAtributes.class);
 
     private String name;
     private final Class<?> atributesClass;
