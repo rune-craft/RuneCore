@@ -13,11 +13,12 @@ import java.util.function.BiFunction;
 public enum Table {
 
     USERS("users", Atribute.UsersAtributes.class),
+    CHARACTERS("characters", Atribute.CharactersAtributes.class),
     GUILDS("guilds", Atribute.GuildsAtributes.class),
     GUILD_MEMBERS("guildmembers", Atribute.GuildMembersAtributes.class);
 
     private String name;
-    private final Class<?> atributesClass;
+    private Class<?> atributesClass;
 
     private Table(String name, Class<?> atributesClass) {
         this.name = name;
