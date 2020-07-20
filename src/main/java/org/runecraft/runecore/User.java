@@ -1,12 +1,10 @@
 package org.runecraft.runecore;
-
-import ca.stellardrift.permissionsex.PermissionsEx;
-import ca.stellardrift.permissionsex.sponge.PermissionsExPlugin;
 import net.luckperms.api.LuckPerms;
 import org.spongepowered.api.Sponge;
 import org.spongepowered.api.entity.living.player.Player;
 import org.spongepowered.api.service.user.UserStorageService;
 
+import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
@@ -35,6 +33,15 @@ public class User {
         return Optional.empty();
     }
 
+    public String getName() {
+        Optional<UserStorageService> userStorage = Sponge.getServiceManager().provide(UserStorageService.class);
+        return userStorage.get().get(uid).get().getName();
+    }
+
+    public boolean isOnline(){
+        return getPlayer().isPresent();
+    }
+
     public static Optional<User> by(Player player){
         return by(player.getUniqueId());
     }
@@ -46,9 +53,4 @@ public class User {
     public Optional<Player> getPlayer(){
         return Sponge.getServer().getPlayer(uid);
     }
-
-    public boolean hasPermission(String perm){
-        LuckPerms.
-    }
-
 }

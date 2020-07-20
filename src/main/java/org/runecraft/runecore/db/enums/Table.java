@@ -15,7 +15,10 @@ public enum Table {
     USERS("users", Atribute.UsersAtributes.class),
     CHARACTERS("characters", Atribute.CharactersAtributes.class),
     GUILDS("guilds", Atribute.GuildsAtributes.class),
-    GUILD_MEMBERS("guildmembers", Atribute.GuildMembersAtributes.class);
+    GUILD_MEMBERS("guildmembers", Atribute.GuildMembersAtributes.class),
+    GUILD_CHUNKS("guildchunks", Atribute.GuildChunksAtributes.class),
+    GUILD_ALLY("guildally", Atribute.GuildAllyAtributes.class),
+    GUILD_ENEMY("guildenemy", Atribute.GuildEnemyAtributes.class);
 
     private String name;
     private Class<?> atributesClass;
